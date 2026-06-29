@@ -160,6 +160,7 @@ h1, h2, h3 {
 .rsvp-form { max-width: 450px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
 
 .rsvp-form input, .rsvp-form select {
+    allign-text:center;
     padding: 15px;
     border: 1px solid #dcd1be;
     border-radius: 10px;
