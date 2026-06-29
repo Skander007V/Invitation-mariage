@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Mariage ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Welcome -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Aziz & Emna</h1>
+            <p class="date">📅 12 Septembre 2026</p>
+            <p class="tagline">On se dit Oui ! 💍</p>
+            <a href="#rsvp" class="btn">Bech tji? Akdelna n7othek fel lesta</a>
+        </div>
+    </header>
+
+    <!-- Programme -->
+    <section class="details">
+        <h2>Le Programme / El Bernamej 🎶</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>El Outia</h3>
+                <p>📍 Salle Les Lys</p>
+                <p>⏰ 19:00</p>
+                <p>Ambiance 100% tunisienne, darbouka w jaw!</p>
+            </div>
+            <div class="card">
+                <h3>Le Mariage</h3>
+                <p>📍 Le Palace</p>
+                <p>⏰ 21:00</p>
+                <p>Robe blanche, costume, w sranek lel sbe7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Form -->
+    <section id="rsvp" class="rsvp-section">
+        <h2>Formulaire RSVP</h2>
+        <p>Confirmation obligatoire 3la khater el places limited!</p>
+        <form class="rsvp-form">
+            <input type="text" placeholder="Ismek w la9bek" required>
+            <input type="number" placeholder="Nombre de personnes" min="1" max="5" required>
+            <select required>
+                <option value="">Bech tji?</option>
+                <option value="oui">Ey nchallah, m9ayem el jaw!</option>
+                <option value="non">Désolé(e), mana9darch</option>
+            </select>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Fait avec ❤️ pour un jour inoubliable.</p>
+    </footer>
+
+</body>
+</html>
