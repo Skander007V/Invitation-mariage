@@ -23,7 +23,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="floral-divider">🌸 ✨ 🌸</div>
-            <h1>Rayen & Bellili</h1>
+            <h1>Aziz & Emna</h1>
             <p class="date">📅 12 Septembre 2026</p>
             <p class="tagline">On se dit Oui au bord de la mer ! 💍</p>
             <a href="#rsvp" class="btn">Bech tji? Akdelna n7othek fel lesta</a>
@@ -39,14 +39,14 @@
                 <h3>El Outia</h3>
                 <p class="loc">📍 Salle Les Lys</p>
                 <p class="time">⏰ 19:00</p>
-                <p class="desc">localisation mtaa l blasa</p>
+                <p class="desc">Ambiance 100% tunisienne, darbouka w jaw echa3bi el m9ayem!</p>
             </div>
             <div class="card">
                 <div class="card-icon">🥂</div>
                 <h3>Le Mariage</h3>
                 <p class="loc">📍 Le Palace (Vue sur mer)</p>
                 <p class="time">⏰ 21:00</p>
-                <p class="desc">localisation mtaa l blasa</p>
+                <p class="desc">Robe blanche, costume chic, w sranek lal sbe7 m3a el decoration el royal.</p>
             </div>
         </div>
     </section>
@@ -55,20 +55,30 @@
         <h2 class="section-title">Formulaire RSVP</h2>
         <div class="decorative-line"></div>
         <p class="rsvp-subtitle">Confirmation obligatoire 3la khater el places limited y3aychek!</p>
-        <form class="rsvp-form">
-            <input type="text" placeholder="Nom et prenom" required>
-            <input type="number" placeholder="Nombre de personnes" min="1" max="5" required>
-            <select required>
+        
+        <form class="rsvp-form" action="https://formspree.io/f/EL_ID_MTE3EK" method="POST">
+            
+            <label for="name">Nom & Prénom:</label>
+            <input type="text" id="name" name="Nom_Complet" placeholder="Ismek w la9bek" required>
+            
+            <label for="guests">Nombre de personnes:</label>
+            <input type="number" id="guests" name="Nombre_Invites" min="1" max="5" placeholder="Qadeh min wa7ed?" required>
+            
+            <label for="attendance">Présence:</label>
+            <select id="attendance" name="Presence" required>
                 <option value="">Bech tji?</option>
                 <option value="oui">Ey nchallah, m9ayem el jaw!</option>
                 <option value="non">Désolé(e), mana9darch</option>
             </select>
+            
+            <input type="hidden" name="_subject" value="Nouvelle réponse RSVP Mariage ! ✨">
+            
             <button type="submit" class="btn btn-submit">Envoyer</button>
         </form>
     </section>
 
     <footer>
-        <p>Fait avec ❤️ pour un jour de rêve — Rayen & Bellili 2026</p>
+        <p>Fait avec ❤️ pour un jour de rêve — Aziz & Emna 2026</p>
     </footer>
 
 </body>
