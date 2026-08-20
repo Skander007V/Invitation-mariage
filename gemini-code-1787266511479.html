@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Server Registration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive, sans-serif;
+    }
+
+    body {
+      background-color: #120c08;
+      background-image: 
+        radial-gradient(#281313 15%, transparent 16%),
+        radial-gradient(#1c0a0a 15%, transparent 16%);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .minecraft-box {
+      background-color: #5f3e1b;
+      border: 4px solid #000;
+      box-shadow: 
+        inset -4px -4px 0px 0px #311e0b,
+        inset 4px 4px 0px 0px #8b5a2b,
+        0 0 15px rgba(255, 0, 0, 0.3);
+      padding: 30px;
+      width: 100%;
+      max-width: 550px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff3333;
+      text-shadow: 2px 2px #000;
+      font-size: 16px;
+      margin-bottom: 25px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 9px;
+      color: #ffb3b3;
+      text-shadow: 1px 1px #000;
+      line-height: 1.3;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #2b1810;
+      border: 3px solid #000;
+      box-shadow: 
+        inset 3px 3px 0px 0px #140b07,
+        inset -3px -3px 0px 0px #42261a;
+      color: #ff4444;
+      font-size: 9px;
+      outline: none;
+      transition: all 0.1s ease;
+    }
+
+    input:focus, select:focus {
+      background-color: #3d2015;
+      color: #ffffff;
+      border-color: #ff0000;
+      box-shadow: 
+        0 0 8px #ff0000,
+        inset 3px 3px 0px 0px #140b07,
+        inset -3px -3px 0px 0px #ff3333;
+    }
+
+    textarea:disabled, textarea[readonly] {
+      background-color: #1a0f0a;
+      color: #ffaa00;
+      border-color: #333333;
+      cursor: not-allowed;
+      box-shadow: inset 3px 3px 0px 0px #0a0503;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .mc-button {
+      width: 100%;
+      padding: 14px;
+      background-color: #8b0000;
+      border: 3px solid #000;
+      box-shadow: 
+        inset 3px 3px 0px 0px #ff4d4d,
+        inset -3px -3px 0px 0px #4a0000;
+      color: #fff;
+      font-size: 11px;
+      cursor: pointer;
+      text-shadow: 2px 2px #000;
+      margin-top: 10px;
+    }
+
+    .mc-button:hover {
+      background-color: #cc0000;
+      box-shadow: 
+        0 0 12px #ff0000,
+        inset 3px 3px 0px 0px #ff8080,
+        inset -3px -3px 0px 0px #660000;
+    }
+
+    .mc-button:active {
+      box-shadow: 
+        inset -3px -3px 0px 0px #ff8080,
+        inset 3px 3px 0px 0px #660000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="minecraft-box">
+    <h2>SERVER APPLICATION</h2>
+    
+    <form action="https://formspree.io/f/xkjwyzpz" method="POST">
+      <div class="form-group">
+        <label for="fullname">CHARACTER NAME (ESM W LA9AB):</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Ex: bachir el fasmewi" required class="mc-audio">
+      </div>
+
+      <div class="form-group">
+        <label for="age">AGE (OMRER):</label>
+        <input type="number" id="age" name="age" min="1" max="99" placeholder="Ex: 18" required class="mc-audio">
+      </div>
+
+      <div class="form-group">
+        <label for="platform">PLATFORM (PC / MOBILE):</label>
+        <select id="platform" name="platform" required class="mc-audio">
+          <option value="" disabled selected>Ekhtar Platform...</option>
+          <option value="pc">PC (Java / Bedrock)</option>
+          <option value="mobile">Mobile (PE)</option>
+          <option value="both">Both (PC & Mobile)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="team">TEAM / CLAN NAME:</label>
+        <input type="text" id="team" name="team" placeholder="Ex: Redstone Builders..." required class="mc-audio">
+      </div>
+
+      <div class="form-group">
+        <label for="played_before">L3ABET MINECRAFT 9BAL?</label>
+        <select id="played_before" name="played_before" required class="mc-audio">
+          <option value="" disabled selected>Ekhtar...</option>
+          <option value="yes">Ey (Yes)</option>
+          <option value="no">La (No)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="story">GAME TYPE / MODE:</label>
+        <textarea id="story" name="story_mode" rows="2" readonly>SERVER HEDHA RP TRADE AND RAID</textarea>
+      </div>
+
+      <button type="submit" class="mc-button mc-audio">SUBMIT APPLICATION</button>
+    </form>
+  </div>
+
+  <script>
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playMinecraftClick() {
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(1200, audioCtx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(400, audioCtx.currentTime + 0.04);
+
+      gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.04);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.04);
+    }
+
+    document.querySelectorAll('.mc-audio').forEach(element => {
+      element.addEventListener('click', playMinecraftClick);
+      element.addEventListener('focus', playMinecraftClick);
+    });
+  </script>
+
+</body>
+</html>
